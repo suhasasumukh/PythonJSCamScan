@@ -39,6 +39,7 @@ def bbox_to_bytes(bbox_array):
 
   return bbox_bytes
 
+
 """## Haar Cascade Classifier
 For this tutorial we will run a simple object detection algorithm called Haar Cascade on our images and video fetched from our webcam. OpenCV has a pre-trained Haar Cascade face detection model.
 """
@@ -117,10 +118,10 @@ def video_stream():
     var captureCanvas;
     var imgElement;
     var labelElement;
-
     var pendingResolve = null;
     var shutdown = false;
 
+    
     function removeDom() {
        stream.getVideoTracks()[0].stop();
        video.remove();
